@@ -1,0 +1,87 @@
+[0] Config.pm:308> INFO - This is Biber 2.20 running in TOOL mode
+[0] Config.pm:311> INFO - Logfile is 'originea-gandirii-europene.bib.blg'
+[107] biber-darwin:340> INFO - === Thu Aug  8, 2024, 18:00:00
+[151] Biber.pm:4650> INFO - Looking for bibtex file 'originea-gandirii-europene.bib'
+[241] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1514] bibtex.pm:1519> INFO - Found BibTeX data source 'originea-gandirii-europene.bib'
+[4548] Utils.pm:410> ERROR - BibTeX subsystem: /var/folders/xb/tvrmfwqj3js2lvjbgzck9k3h0000gn/T/biber_tmp_oKaO/4e6b09cbec3cfe743a04686d7d698cd2_47469.utf8, line 4799, syntax error: found "{	issue = {2,},  journal = {The Monist},  pages = {255--274},  title = {{{PHILOSOPHY IS THE CONFESSION THAT BEING IS COMMUNION}}},  volume = {55},  bdsk-url-1 = {http://www.jstor.org/stable/27902217}}", expected "="
+[4548] Biber.pm:131> WARN - Duplicate entry key: 'adkinstruth-kosm' in file 'originea-gandirii-europene.bib', skipping ...
+[4548] Biber.pm:131> WARN - Duplicate entry key: 'adornonotes-to-l' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'basslerthe-logic-' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'ewegenreview:-he' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'frankelancient-ly' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'greek-lite' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'guetterreview-of-' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'hegelprelegeri-' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'hofstadterphilosophi' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'laksearly-gree' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'philosophy' in file 'originea-gandirii-europene.bib', skipping ...
+[4549] Biber.pm:131> WARN - Duplicate entry key: 'speaking-w' in file 'originea-gandirii-europene.bib', skipping ...
+[4550] Biber.pm:131> WARN - Duplicate entry key: 'speaking-w' in file 'originea-gandirii-europene.bib', skipping ...
+[4550] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'cartledgewriting-th', ignoring
+[4550] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'cartledgewriting-th', ignoring
+[4550] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'cartledgewriting-th', ignoring
+[4550] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'cartledgewriting-th', ignoring
+[4550] Biber.pm:131> WARN - Range field 'pages' in entry 'boegeholdhomer' is malformed, falling back to literal
+[4551] Biber.pm:131> WARN - Invalid namepart option 'family=warren given=nicolas prefix=de useprefix=true given=nicolas prefix=de useprefix=true given=nicolas prefix=de useprefix=true given=nicolas prefix=de useprefix' found in extended name format name 'author' in entry 'anarchy-in', ignoring
+[4551] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'anarchy-in', ignoring
+[4551] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'foxhallcargoes-of', ignoring
+[4551] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'foxhallcargoes-of', ignoring
+[4551] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'foxhallcargoes-of', ignoring
+[4551] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'foxhallcargoes-of', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'family=hill given=leslie given-i=leslie given=leslie given-i=leslie given=leslie given-i=leslie given=leslie given-i' found in extended name format name 'author' in entry 'on-the-per', ignoring
+[4552] Biber.pm:131> WARN - Range field 'pages' in entry 'morganaposiopesi' is malformed, falling back to literal
+[4552] Biber.pm:131> WARN - Invalid namepart option 'family=moati given=raoul given-i=raoul given=raoul given-i=raoul given=raoul given-i=raoul given=raoul given-i' found in extended name format name 'author' in entry 'levinas-an', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'family=mcgovern given=michael given-i=michael given=michael given-i=michael given=michael given-i=michael given=michael given-i' found in extended name format name 'author' in entry 'durkheim-a', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'family=heiden given=gerrit given=gerrit given=gerrit given' found in extended name format name 'author' in entry 'the-truth-', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'prefix=van der useprefix' found in extended name format name 'author' in entry 'the-truth-', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'family=polignac given=françois prefix=de useprefix=true given=françois prefix=de useprefix=true given=françois prefix=de useprefix=true given=françois prefix=de useprefix' found in extended name format name 'author' in entry 'sanctuarie', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'sanctuarie', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'towards-th', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'towards-th', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'towards-th', ignoring
+[4552] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'towards-th', ignoring
+[4553] Biber.pm:131> WARN - legacy year field 'Tue, 01/12/1999 - 12:00' in entry 'detienne0truth-and-' is not an integer - this will probably not sort properly.
+[4553] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'boedekerthe-new-si', ignoring
+[4553] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'boedekerthe-new-si', ignoring
+[4553] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'boedekerthe-new-si', ignoring
+[4553] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'boedekerthe-new-si', ignoring
+[4553] Biber.pm:131> WARN - legacy year field 'Tue, 01/12/1999 - 12:00' in entry 'detienne0the-proces' is not an integer - this will probably not sort properly.
+[4553] Biber.pm:131> WARN - legacy year field 'Tue, 01/12/1999 - 12:00' in entry 'detienne0the-oid-ma' is not an integer - this will probably not sort properly.
+[4553] Biber.pm:131> WARN - Invalid namepart option 'family=clemens given=justin given-i=justin given=justin given-i=justin given=justin given-i=justin given=justin given-i' found in extended name format name 'author' in entry 'agamben-an', ignoring
+[4553] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'boedekerarchaic-gr', ignoring
+[4553] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'boedekerarchaic-gr', ignoring
+[4553] Biber.pm:131> WARN - legacy year field 'Tue, 01/12/1999 - 12:00' in entry 'detienne0the-ambigu' is not an integer - this will probably not sort properly.
+[4553] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'morrisarchaeolog', ignoring
+[4554] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'morrisarchaeolog', ignoring
+[4554] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'morrisarchaeolog', ignoring
+[4554] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'morrisarchaeolog', ignoring
+[4569] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'author' in entry 'fisherintroducti', ignoring
+[4570] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'author' in entry 'fisherintroducti', ignoring
+[4571] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'fisherintroducti', ignoring
+[4571] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'fisherintroducti', ignoring
+[4571] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'fisherintroducti', ignoring
+[4571] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'fisherintroducti', ignoring
+[4572] Biber.pm:131> WARN - legacy year field 'Tue, 01/12/1999 - 12:00' in entry 'detienne0the-master' is not an integer - this will probably not sort properly.
+[4572] Biber.pm:131> WARN - legacy year field 'Tue, 01/12/1999 - 12:00' in entry 'detienne0a-choice-b' is not an integer - this will probably not sort properly.
+[4573] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'dalbyhomers-ene', ignoring
+[4573] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'dalbyhomers-ene', ignoring
+[4574] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'dalbyhomers-ene', ignoring
+[4574] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'dalbyhomers-ene', ignoring
+[4574] Biber.pm:131> WARN - Invalid namepart option 'family=koepnick given=lutz given-i=lutz given=lutz given-i=lutz given=lutz given-i=lutz given=lutz given-i' found in extended name format name 'author' in entry 'benjamins-', ignoring
+[4574] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'boedekerpreface', ignoring
+[4575] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'boedekerpreface', ignoring
+[4575] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'boedekerpreface', ignoring
+[4575] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'boedekerpreface', ignoring
+[4575] Biber.pm:131> WARN - Invalid namepart option 'family=souza given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix=true given=philip prefix=de useprefix' found in extended name format name 'author' in entry 'hodkinsonlakonian-a', ignoring
+[4576] Biber.pm:131> WARN - Invalid namepart option 'prefix=de useprefix' found in extended name format name 'author' in entry 'hodkinsonlakonian-a', ignoring
+[4576] Biber.pm:131> WARN - Invalid namepart option 'family=wees given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix=true given=hans prefix=van useprefix' found in extended name format name 'editor' in entry 'hodkinsonlakonian-a', ignoring
+[4577] Biber.pm:131> WARN - Invalid namepart option 'prefix=van useprefix' found in extended name format name 'editor' in entry 'hodkinsonlakonian-a', ignoring
+[4577] Biber.pm:131> WARN - Range field 'pages' in entry 'alexanderdialogue-a' is malformed, falling back to literal
+[4579] Biber.pm:131> WARN - Invalid namepart option 'family=bosteels given=bruno given-i=bruno given=bruno given-i=bruno given=bruno given-i=bruno given=bruno given-i' found in extended name format name 'author' in entry 'what-are-p', ignoring
+[4581] Biber.pm:131> WARN - Range field 'pages' in entry 'mossdoxa-is-of' is malformed, falling back to literal
+[4581] Biber.pm:131> WARN - Invalid namepart option 'family=ghosh given=ranjan given-i=ranjan given=ranjan given-i=ranjan given=ranjan given-i=ranjan given=ranjan given-i' found in extended name format name 'author' in entry 'the-agoniz', ignoring
+[4581] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/xb/tvrmfwqj3js2lvjbgzck9k3h0000gn/T/biber_tmp_oKaO/4e6b09cbec3cfe743a04686d7d698cd2_47469.utf8, line 928, warning: undefined macro "VIIWK2N"
+[4581] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/xb/tvrmfwqj3js2lvjbgzck9k3h0000gn/T/biber_tmp_oKaO/4e6b09cbec3cfe743a04686d7d698cd2_47469.utf8, line 4795, warning: possible runaway string started at line 4794
+[4581] Biber.pm:133> INFO - WARNINGS: 78
+[4581] Biber.pm:136> INFO - ERRORS: 1
