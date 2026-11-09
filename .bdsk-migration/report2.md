@@ -1,0 +1,449 @@
+# bdsk-file migration (dry run, flat)
+
+- entries with bdsk-file fields: 1322
+- entries to change: 1303 (1308 bdsk fields removed)
+- of those, file name differs from citekey (after stripping BibDesk digit): 114
+- resolved only via citekey fallback: 13
+- entries left untouched: 19
+- entries with several files: 5
+- merged into an existing `file` field: 25
+- existing `file` fields made relative: 2372
+- files to move to the top level: 1293
+- move collisions (left in place): 0
+
+## Left untouched (19)
+
+- `a1s2-epistemologie-ignoranta.bib` `SorensenContagious-Blindspots:2015`: bdsk-file-1: not found: SorensenContagious-Blindspots2015Sorensen00
+- `formal-sciences.bib` `abdali1974a-combinat`: bdsk-file-1: not found: ../../Library/Mobile Documents/.Trash/abdali1974a-combinat0.pdf
+- `formal-semantics.bib` `0`: bdsk-file-1: not found: ../../../../Volumes/home/papers/0.pdf
+- `lang.bib` `cite-key`: bdsk-file-1: ambiguous ['inbox/mac-bibdesk/cite-key4.pdf', 'inbox/mac-bibdesk/cite-key3.pdf', 'inbox/mac-bibdesk/cite-key2.pdf', 'inbox/mac-bibdesk/cite-key0.pdf']
+- `lang.bib` `2006`: bdsk-file-1: not found: ../literature/20060.pdf
+- `law.bib` `feinbergin-defense`: bdsk-file-1: not found: ../07.Feinberg Moral Rights.pdf
+- `marx.bib` `marshall-1999-tech-ethi-prob`: existing complex `file` field; left untouched
+- `marx.bib` `benjamin2021toward-a-c`: bdsk-file-1: not found: ../../../../../Volumes/literature/filed-from-bibdesk/benjamin2021toward-a-c0.pdf
+- `marx.bib` `iftode2024fisa-disci`: existing complex `file` field; left untouched
+- `marx.bib` `pitts2004illness-an`: bdsk-file-1: not found: ../../../../../Volumes/literature/filed-from-bibdesk/pitts2004illness-an0.pdf
+- `marx.bib` `eisenmann2006strategies`: bdsk-file-1: not found: ../../../literature/eisenmann2006strategies0.pdf
+- `marx.bib` `lauer2020plastic-su`: bdsk-file-1: not found: ../../../literature/lauer2020plastic-su0.pdf
+- `marx.bib` `songradermecker-2024-role-meanin-valuation-art`: existing complex `file` field; left untouched
+- `marx.bib` `giblin2017what-if-we`: bdsk-file-1: not found: ../../../626825.pdf
+- `modernitate.bib` `look2020gottfried-`: bdsk-file-1: not found: ../literature/kant1998critique-o0.pdf
+- `modernitate.bib` `posescu1979studiu-int`: bdsk-file-1: not found: ../../../../inbox/academic-reading/modernitate/SEMINAR/SEMINAR FILOSOFIE/Sem. 5 - 6 Text suplimentar Benedict-Baruch-Spinoza-Tratatul-despre-indreptarea-intelectului.pdf
+- `modernitate.bib` `ortega-y-gassetce-este-fi`: bdsk-file-1: not found: ../../../../inbox/academic-reading/modernitate/SEMINAR/SEMINAR FILOSOFIE/Sem.2. Text Suplimentar Ortega Y Gasset.pdf
+- `nietzsche.bib` `nietzsche1995unpublishe`: bdsk-file-1: not found: ../literature/nietzsche1995unpublishe0.pdf
+- `oge-poezie.bib` `mostMadnessTragedy2013`: bdsk-file-1: not found: ../../lit/mostmadnesstragedy20130.html
+
+## Relative paths that point to a missing file (259)
+
+- `a1s2-phaidon.bib` `campbell-2021-self-motion`: campbell-2021-self-motion.pdf
+- `a2s1-descartes-music.bib` `pesic-2014-music-makin`: pesic-2014-music-makin.pdf
+- `a2s1-descartes-music.bib` `hamou-2018-marin-mersen`: hamou-2018-marin-mersen.pdf
+- `a2s1-descartes-music.bib` `ariew-2021-natur-cartes-logic`: ariew-2021-natur-cartes-logic.pdf
+- `a2s1-descartes-music.bib` `drollinger-2021-music-humanis-renaissan`: drollinger-2021-music-humanis-renaissan.pdf
+- `a2s1-descartes-music.bib` `eggert-2013-music-univeralis`: eggert-2013-music-univeralis.pdf
+- `a2s1-descartes-music.bib` `nattiez-1990-music-discour-semiolo`: nattiez-1990-music-discour-semiolo.pdf
+- `a2s1-descartes-music.bib` `austern-2002-music-sensa-sensuali`: austern-2002-music-sensa-sensuali.pdf
+- `a2s1-descartes-music.bib` `descartes-1954-geomet-rene-descar`: descartes-1954-geomet-rene-descar.pdf
+- `a2s1-descartes-music.bib` `garberayers-1998-histo-17-century-vol2`: garberayers-1998-histo-17-century-vol2.pdf
+- `a2s1-descartes-music.bib` `alanen-1999-intuit-assen-neces`: alanen-1999-intuit-assen-neces.pdf
+- `a2s1-descartes-music.bib` `barry-1987-languag-music-sign`: barry-1987-languag-music-sign.pdf
+- `a2s1-descartes-music.bib` `hatchbernstein-1993-music-theor`: hatchbernstein-1993-music-theor.pdf
+- `a2s1-descartes-music.bib` `baldner-2025-descar-creat-time`: baldner-2025-descar-creat-time.pdf
+- `a2s1-descartes-music.bib` `marion-2008-ego-god-cartesi-question`: marion-2008-ego-god-cartesi-question.pdf
+- `a2s1-descartes-music.bib` `nelson-2015-concep-descar`: nelson-2015-concep-descar.pdf
+- `a2s1-descartes-music.bib` `dokic-2007-two-ontol-sound`: dokic-2007-two-ontol-sound.pdf
+- `a2s1-descartes-music.bib` `dear-2018-revol-science-europ`: dear-2018-revol-science-europ.pdf
+- `a2s1-descartes-music.bib` `maconie-2002-second-sense`: maconie-2002-second-sense.pdf
+- `a2s2-contradiction.bib` `larsen-1962-kierk-absol-parad`: larsen-1962-kierk-absol-parad.pdf
+- `a2s2-contradiction.bib` `stewart-2016-kierk-renais-tome-1`: stewart-2016-kierk-renais-tome-1.pdf
+- `a2s2-contradiction.bib` `aroosi-2019-dialec-self-kierke-marx-subject`: aroosi-2019-dialec-self-kierke-marx-subject.pdf
+- `a2s2-contradiction.bib` `norton-1976-person-destin-ethic-individu`: norton-1976-person-destin-ethic-individu.pdf
+- `a2s2-contradiction.bib` `havers-2013-kierk-adorn-socrat-individ`: havers-2013-kierk-adorn-socrat-individ.pdf
+- `a2s2-contradiction.bib` `walker-1991-thoug-faith`: walker-1991-thoug-faith.pdf
+- `a2s2-contradiction.bib` `burbidge-2006-logic-hegel-logic`: burbidge-2006-logic-hegel-logic.pdf
+- `a2s2-lang-dogwhistles.bib` `davies-2007-grices-cooper-princ`: davies2007grices-coo.pdf
+- `a2s2-lang-dogwhistles.bib` `jaszczolt-2019-rethin-gricean`: jaszczolt-2019-rethin-gricean.pdf
+- `a2s2-lang-dogwhistles.bib` `manley-1980-convention`: manley-1980-convention.pdf
+- `a2s2-lang-dogwhistles.bib` `ochs-1976-universa-conversa-implicatur`: ochs-1976-universa-conversa-implicatur.pdf
+- `a2s2-lang-dogwhistles.bib` `davis-2001-implic-failur-grice`: davis-2001-implic-failur-grice.pdf
+- `a2s2-lang-dogwhistles.bib` `mcgowan-2025-dogwhistle-figleave`: mcgowan-2025-dogwhistle-figleave.pdf
+- `a2s2-lang-dogwhistles.bib` `halion-1989-speec-act-deconstruc-parasit`: halion-1989-speec-act-deconstruc-parasit.pdff
+- `a2s2-lang-dogwhistles.bib` `grice-1978-notes-logic-conver`: grice-1978-notes-logic-conver.pdf
+- `a2s2-lang-dogwhistles.bib` `mandelbaum-2015-attit-infer-assoc`: mandelbaum-2015-attit-infer-assoc.pdf
+- `a2s2-lang-dogwhistles.bib` `berstler-2025-struc-open-secret`: berstler-2025-struc-open-secret.pdf
+- `a2s2-lang-dogwhistles.bib` `schroeder-2008-semantic-expressiv`: schroeder-2008-semantic-expressiv.pdf
+- `a2s2-lang-dogwhistles.bib` `allanjaszczolt-2012-cambr-handb-pragm`: allanjaszczolt-2012-cambr-handb-pragm.pdf
+- `a2s2-lang-dogwhistles.bib` `sander-2021-frege-presuppo`: sander-2021-frege-presuppo.pdf
+- `a3s1-estetica-oana.bib` `hegel-1966-introd`: hegel-1966-introd.pdf
+- `a3s1-estetica-oana.bib` `scruton-1996-aesth-endeav-today`: scruton-1996-aesth-endeav-today.df
+- `a3s1-ifr.bib` `vadana-2016-judec-timp-logos`: vuadana2016judecatua.pdpf
+- `a3s1-ifr.bib` `vieru-2002-reper-etic-noica`: vieru-2002-reper-etic-noica.pdf
+- `a3s1-ifr.bib` `noica-1998-echil-spirit`: noica-1998-echil-spirit.pdf
+- `a3s1-paradigme-culturale.bib` `calhoon-1998-person-effec`: calhoon-1998-person-effec.pdf
+- `a3s1-paradigme-culturale.bib` `santner-2019-on-creat-life`: santner-2019-on-creat-life.pdf
+- `a3s1-sea.bib` `heinemann2022where-when`: heinemann2022where-when.pdf
+- `a3s1-sea.bib` `inwagen-1980-time-cause`: inwagen-1980-time-cause.pdf
+- `a3s1-sea.bib` `meincke-2018-autop-biolog`: meincke-2018-autop-biolog.pdf
+- `a3s2-contemporana.bib` `dennett-1992-self-center`: kessel-2014-self-consc.pdf
+- `a3s2-contemporana.bib` `habermas-1982-entwin-myth-enlig`: habermas-1982-entwin-myth-enlig.pdf
+- `a3s2-contemporana.bib` `geuss-1986-aesth-theor`: geuss-1986-aesth-theor.pdf
+- `a3s2-contemporana.bib` `pecora-1991-nietz-geneal`: pecora-1991-nietz-geneal.pdf
+- `a3s2-contemporana.bib` `oconnor-2004-adorn-negati`: oconnor-2004-adorn-negati.pdf
+- `a3s2-contemporana.bib` `lotringerhochroth-2007-polit-truth`: lotringerhochroth-2007-polit-truth.pdf
+- `a3s2-hermeneutica.bib` `kingdoherty-2018-think-greek`: kingdoherty-2018-think-greek.pdf
+- `a3s2-hermeneutica.bib` `tarnas-1991-passion-wester-mind`: tarnas-1991-passion-wester-mind.pdf
+- `a3s2-hermeneutica.bib` `rhodes-2003-eros-wisdom-silen`: rhodes-2003-eros-wisdom-silen.pdf
+- `a3s2-hermeneutica.bib` `gallop-1969-rosen-sympos`: gallop-1969-rosen-sympos.pdf
+- `a3s2-hermeneutica.bib` `davis-1990-spirit-heidewg-questio`: davis-1990-spirit-heidewg-questio.pdf
+- `a3s2-hermeneutica.bib` `halliwell-2002-aesth-mimes`: halliwell-2002-aesth-mimes.pdf
+- `a3s2-hermeneutica.bib` `kockelmans-1980-heideg-language`: kockelmans-1980-heideg-language.pdf
+- `greaca-redone.bib` `morgan-1984-sense-percep`: morgan-1984-sense-percep.pdf
+- `hci.bib` `litt-2025-malleab`: litt-2025-malleab.pdf
+- `hci.bib` `li-2023-examin-gamif`: li-2023-examin-gamif.pdf
+- `hci.bib` `knight-2019-enslav-trapp-data`: knight-2019-enslav-trapp-data.pdf
+- `hegel.bib` `murdoch-2002-alter-hegel`: murdoch-2002-alter-hegel.pdf
+- `hegel.bib` `solomon-1969-approac-hegel-phenom`: solomon-1969-approac-hegel-phenom.pdf
+- `hegel.bib` `ferro-2022-plato-hegel-dialec`: ferro-2022-plato-hegel-dialec.pdf
+- `humanities.bib` `augustinus-2003-confes`: augustinus-2003-confes.pdf
+- `humanities.bib` `han-2017-psychopolitics`: han-2017-psychopolitics.pdf
+- `humanities.bib` `newman-2003-stirn-foucaul`: newman-2003-stirn-foucaul.pdf
+- `lang.bib` `blackburn-1984-spread-word`: blackburn-1984-spread-word.pdf
+- `lang.bib` `dolevroubach-2016-cosmol-psych-time`: dolevroubach-2016-cosmol-psych-time.pdf
+- `marx.bib` `perelman-2000-invention-capital`: perelman-2000-invention-capital.pdf
+- `marx.bib` `achcar-1999-legac-ernes-mandel`: achcar-1999-legac-ernes-mandel.pdf
+- `marx.bib` `nelson-1993-value-free-valuel`: nelson1993value-free.pdf
+- `marx.bib` `osborne-2013-anywh-not-all`: osborne-2013-anywh-not-all.pdf
+- `marx.bib` `fort-2021-bazin-etern-return`: fort-2021-bazin-etern-return.pdf
+- `marx.bib` `ngai-2012-our-aesth-categ`: ngai2012our-aesthe.pdf
+- `marx.bib` `ross-2016-without-least-tremor`: ross-2016-without-least-tremor.pdf
+- `marx.bib` `sontag-2007-later-essays`: sontag-2007-later-essays.pdf
+- `marx.bib` `foster-2025-marx-commun-societ`: foster-2025-marx-commun-societ.pdf
+- `marx.bib` `murtola-2011-against-commodifi`: murtola-2011-against-commodifi.pdf
+- `marx.bib` `adair-2010-commod-infor`: adair-2010-commod-infor
+- `marx.bib` `krueger-2019-rockonomics`: krueger-2019-rockonomics.pdf
+- `marx.bib` `purcellrandall-2016-centur-persp`: purcellrandall-2016-centur-persp.pdf
+- `marx.bib` `schrift-2014-logic-gift`: schrift-2014-logic-gift.pdf
+- `marx.bib` `hurst-2020-capit-banal-desir`: hurst-2020-capit-banal-desir.pdf
+- `marx.bib` `larson-2020-polit-econ-silicon-valley`: larson-2020-polit-econ-silicon-valley.pdf
+- `marx.bib` `anderson-2017-karl-marx`: anderson-2017-karl-marx.pdf
+- `marx.bib` `pareles-2002-bowie-entrepre`: pareles-2002-bowie-entrepre.pdf
+- `marx.bib` `brown-2000-phonog-ontolo-record`: brown-2000-phonog-ontolo-record.pdf
+- `marx.bib` `diaz-2025-abjec-forml`: diaz-2025-abjec-forml.pdf
+- `marx.bib` `petridis-2025-mood-machin-savage`: petridis-2025-mood-machin-savage.pdf
+- `marx.bib` `arditimiller-2019-dialec-digit-cultur`: arditimiller-2019-dialec-digit-cultur.pdf
+- `marx.bib` `gabrielsson-2011-stron-experiences`: gabrielsson-2011-stron-experiences.pdf
+- `marx.bib` `rubin-2025-essay-marxs`: rubin-2025-essay-marxs.pdf
+- `marx.bib` `gabel-1975-false-consc`: gabel-1975-false-consc.pdf
+- `marx.bib` `fraser-2015-crisis-contra-financi`: fraser-2015-crisis-contra-financi.pdf
+- `marx.bib` `throsby-2001-econom-cultur`: throsby-2001-econom-cultur.pdf
+- `marx.bib` `ostovich-1999-shier-weber-nichol`: ostovich-1999-shier-weber-nichol.pdf
+- `marx.bib` `eisenberg-2005-reco-angel`: eisenberg-2005-reco-angel.pdf
+- `marx.bib` `kusekleonhard-2005-futur-music`: kusekleonhard-2005-futur-music.pdf
+- `marx.bib` `pascual-2022-techn-exper-adorno-fink`: pascual-2022-techn-exper-adorno-fink.pdf
+- `marx.bib` `lysloffgay-2003-music-technoculture`: lysloffgay-2003-music-technoculture.pdf
+- `marx.bib` `muzio-2013-capit-mode-power`: muzio-2013-capit-mode-power.pdf
+- `marx.bib` `eriksson-2016-close-big`: eriksson-2016-close-big.pdf
+- `marx.bib` `vishmidt-2015-polit-specul-labour`: vishmidt-2015-polit-specul-labour.pdf
+- `marx.bib` `martin-2015-routl-compan`: martin-2015-routl-compan.pdf
+- `marx.bib` `vishmidt-2012-specul-mode`: vishmidt-2012-specul-mode.pdf
+- `marx.bib` `hracswebster-2020-songs-experiences`: hracswebster-2020-songs-experiences.pdf
+- `marx.bib` `morrispowers-2015-contr`: morrispowers-2015-contr.pdf
+- `marx.bib` `pelly-2025-mood-machin`: pelly-2025-mood-machin.pdf
+- `marx.bib` `drury-2021-conste-incon-music-copyright`: drury-2021-conste-incon-music-copyright.pdf
+- `marx.bib` `froehlich-2023-copyriot`: froehlich2023copyriot.pdf
+- `marx.bib` `hagen-2015-play-experi`: hagen-2015-play-experi.pdf
+- `marx.bib` `weatherby-2018-theory-platform-capit`: weatherby-2018-theory-platform-capit.pdf
+- `marx.bib` `poenaru-2017-locur-comune`: poenaru-2017-locur-comune.pdf
+- `marx.bib` `hardtnegri-2000-empir`: hardtnegri-2000-empir.pdf
+- `marx.bib` `chittymcivor-2009-karl-marx`: chittymcivor-2009-karl-marx.pdf
+- `marx.bib` `gabrielssonwik-2003-stron`: gabrielsson2003strong.pdf
+- `marx.bib` `almqvist-2019-think-being`: almqvist-2019-think-spotif.pdf
+- `marx.bib` `axelos-2005-mondial`: axelos-2005-mondial.pdf
+- `marx.bib` `marchart-2007-post-founda`: marchart-2007-post-founda.pdf
+- `marx.bib` `leon-2025-marx-technics`: leon-2025-marx-technics.pdf
+- `marx.bib` `axelos-2006-world-total`: axelos-2006-world.pdf
+- `marx.bib` `sabia-2010-defen-imman-critiq`: sabia-2010-defen-imman-critiqpdf
+- `marx.bib` `giladi-2024-emerg-marxs`: giladi-2024-emerg-marxs.pdf
+- `marx.bib` `samson-2025-is-imman`: samson-2025-is-imman.pdf
+- `marx.bib` `seve-1978-man-marxis`:  and McGreal, John
+- `marx.bib` `spivak-1985-scatt`: spivak-1985-scatt.pdf
+- `marx.bib` `giddens-1984-consitu`: giddens-1984-consitu.pdf
+- `marx.bib` `fitzmaurice-2015-consp-cons`: fitzmaurice-2015-consp-con.pdf
+- `marx.bib` `marcuse-1973-concept-labor`: marcuse-1973-concept-labor.pdf
+- `marx.bib` `callari-1986-histor-epist`: callari-1986-histor-epist.pdf
+- `marx.bib` `brody-1977-marxis-esthet`: brody-1977-marxis-esthet.pdf
+- `marx.bib` `tischler-2009-adorn-fetish`: tischler-2009-adorn-fetish.pdf
+- `marx.bib` `bencin-2023-art-fetis-adorno`: bencin-2023-art-fetis-adorno.pdf
+- `marx.bib` `berlant-2004-critic-affir`: berlant-2004-critic-affir.pdf
+- `marx.bib` `fuchs-2023-probl-base`: fuchs-2023-probl-base.pdf
+- `marx.bib` `song-2025-halls-encod`: song-2025-halls-encod.pdf
+- `marx.bib` `tobia-2015-wonder-value`: tobia-2015-wonder-value.pdf
+- `marx.bib` `ahmed-2010-affec-theor-reader`: ahmed-2010-affec-theor-reader.pdf
+- `marx.bib` `gorz-2010-immat-value-knowledge`: gorz-2010-immat-value-knowledge.pdf,
+- `marx.bib` `ritzer-2005-enchan-consump`: ritzer-2005-enchan-consump.pdf
+- `marx.bib` `schmidt-1968-knowledge-critic-pol-econ`: schmidt-1968-knowledge-critic-pol-econ.pdf
+- `marx.bib` `liu-2024-from-contem`: liu-2024-from-contem.pdf
+- `marx.bib` `derrida-2012-spect-marx`: derrida-2012-spect-marx.pdf
+- `marx.bib` `negri-1996-notes-evolut`: negri-1996-notes-evolut.pdf
+- `marx.bib` `schwarz-1997-listen-subjec`: schwarz-1997-listen-subjec.pdf
+- `marx.bib` `burgess-2022-every-data`: burgess-2022-every-data.pdf
+- `marx.bib` `ge-2026-algor-kaleid-self`: ge-2026-algor-kaleid-self.pdf
+- `marx.bib` `horkheimer-1978-dawn-declin`: horkheimer-1978-dawn-declin.pdf
+- `marx.bib` `bowie-1985-indiv-diffe`: bowie-1985-indiv-diffe.pdf
+- `marx.bib` `bestpaterson-2010-cultur-polit-econ`: bestpaterson-2010-cultur-polit-econ.pdf
+- `marx.bib` `arvidssoncolleoni-2012-value-infor`: arvidssoncolleoni-2012-value-infor.pdf
+- `marx.bib` `scharff-2007-feenberg-heid-marc`: scharff-2007-andrew-feenb.pdf
+- `marx.bib` `amin-2014-contr-hardt-negri`: amin-2014-contr-hardt-negri.pdf
+- `marx.bib` `steinhoff-2021-autom-auton`: steinhoff-2021-autom-auton.pdf
+- `marx.bib` `murray-2013-unavoid-crises`: murray-2013-unavoid-crises.pdf
+- `marx.bib` `holloway-2005-chang-world`: holloway-2005-chang-world.pdf
+- `marx.bib` `dura-2006-phenom-music`: dura-2006-phenom-music.pdf
+- `marx.bib` `giovanni-1973-reflec-contr`: giovanni-1973-reflec-contr.pdf
+- `marx.bib` `lange-2014-failed-abstr`: lange-2014-failed-abstr.pdf
+- `marx.bib` `liumurthy-2017-east-asian`: liumurthy-2017-east-asian.pdfd
+- `marx.bib` `arthur-1998-system-dialec`: arthur-1998-system-dialec.pdf
+- `marx.bib` `edgley-1977-dialec-contra-colletti`: edgley-1977-dialec-contra-colletti.pdf
+- `marx.bib` `osborne-2000-from-aesth`: osborne-2000-from-aesth.pdf
+- `marx.bib` `shaked-2015-museum-art-value-form`: shaked-2015-museum-art-value-form.pdf
+- `marx.bib` `li-2026-what-moves`: li-2026-what-moves.pdf
+- `marx.bib` `therborn-1970-frank-marxis`: therborn-1970-frank-marxis.pdf
+- `marx.bib` `heinrich-1999-scien-value`: heinrich-1999-scien-value.pdf
+- `marx.bib` `mclennan-1996-post-marxis`: mclennan-1996-post-marxis.pdf
+- `marx.bib` `rindermann-2018-cognit-capit`: rindermann-2018-cognit-capit.pdf
+- `marx.bib` `amin-2011-post-fordis`: amin-2011-post-fordis.pdf
+- `marx.bib` `harvey-2009-commonwealth`: harvey-2009-commonwealth.pdf
+- `marx.bib` `jameson-2016-marxis-form`: jameson-2016-marxis-form.pdf
+- `marx.bib` `evans-2001-magnes-flares`: evans-2001-magnes-flares.pdf
+- `marx.bib` `ziarek-2004-force-art`: ziarek-2004-force-art.pdf
+- `marx.bib` `bratich-2010-digit-imma-labour-onto`: bratich-2010-digit-imma-labour-onto.pdf
+- `marx.bib` `khandizaji-2019-readin-adorn`: khandizaji-2019-readin-adorn.pdf
+- `marx.bib` `bewes-2002-reific-anxie-late-capi`: bewes-2002-reific-anxie-late-capi.pdf
+- `marx.bib` `rose-1993-judais-moder`: rose-1993-judais-moder.pdf
+- `marx.bib` `rose-2000-hegel-sociolo`: rose-2000-hegel-sociolo.pdf
+- `marx.bib` `saenz-2022-being-becom-subsum`: saenz-2022-being-becom-subsum.pdf
+- `marx.bib` `meszaros-2014-necessi-social-contro`: meszaros-2014-necessi-social-contro.pdf
+- `marx.bib` `mickiewicz-2023-concep-heter-levinas-caputo`: mickiewicz-2023-concep-heter-levinas-caputo.pdf
+- `marx.bib` `kennedy-2017-heter-as-aesth`: kennedy-2017-heter-as-aesth.pdf
+- `marx.bib` `stonerdahms-2023-freed-heter-anthr`: stonerdahms-2023-freed-heter-anthr.pdf
+- `marx.bib` `monk-2004-defen-objectivi`: monk-2004-defen-objectivi.pdf
+- `marx.bib` `gindner-2023-totality-recon-lukacs`: gindner-2023-totality-recon-lukacs.pdf
+- `marx.bib` `damsma-2019-language-mathe-hegel-marx`: damsma-2019-language-mathe-hegel-marx.pdf
+- `marx.bib` `lazzarato-2017-misun-desir`: lazzarato-2017-misun-desir.pdf
+- `marx.bib` `rogoffsherman-2004-museum-cultur`: rogoffsherman-2004-museum-cultur.pdf
+- `marx.bib` `weijermars-2004-portrait-artist`: weijermars-2004-portrait-artist.pdf
+- `marx.bib` `kirschmitchell-2004-natur-thing`: kirschmitchell-2004-natur-thing.pdf
+- `marx.bib` `westerman-2021-ethic-deman-reific`: westerman-2021-ethic-deman-reific.pdf
+- `marx.bib` `trentmann-2016-empir-thing`: trentmann-2016-empir-thing.pdf
+- `marx.bib` `strasser-2000-waste-want`: strasser-2000-waste-want.pdf
+- `marx.bib` `leonard-2010-story-stuff`: leonard-2010-story-stuff.pdf
+- `marx.bib` `mcleod-2005-freed-expres`: mcleod-2005-freed-expres.pdf
+- `marx.bib` `ross-2017-philos-polit-aes-experience`: ross-2017-philos-polit-aes-experience.pdf
+- `marx.bib` `lageira-2010-transvaluation-invaluation`: lageira-2010-transvaluation-invaluation.pdf
+- `marx.bib` `gautlopes-2013-routl-compan-aesth`: gautlopes-2013-routl-compan-aesth.pdf
+- `marx.bib` `ruccioamariglio-2016-postm-momen`: ruccioamariglio-2016-postm-momen.pdf
+- `marx.bib` `reynolds-2011-retromania`: reynolds-2011-retromania.pdf
+- `marx.bib` `fuchs-2026-digit-fascis`: fuchs-2026-digit-fascis.pdf
+- `marx.bib` `bennett-2001-enchan-moder-life`: bennett-2001-enchan-moder-life.pdf
+- `marx.bib` `vishmidtpetrossiants-2020-spaces-specul`: vishmidtpetrossiants-2020-spaces-specul.pdf
+- `marx.bib` `eckersleybird-2019-specul-as`: eckersleybird-2019-specul-as.pdf
+- `marx.bib` `andersson-2010-metamorpho-listening-aura`: andersson-2010-metamorpho-listening-aura.pdf
+- `marx.bib` `maclean-1981-unos-polit-econo`: maclean-1981-unos-polit-econo.pdf
+- `marx.bib` `laibman-2016-value-tech-crisis`: laibman-2016-value-tech-crisis.pdf
+- `marx.bib` `luetticken-2010-art-thing-dont-know`: luetticken-2010-art-thing-dont-know.pdf
+- `marx.bib` `diederichsen-2023-aesth-pop-music`: diederichsen-2023-aesth-pop-music.pdf
+- `marx.bib` `negri-2017-marx-foucaul`: negri-2017-marx-foucaul.epub
+- `marx.bib` `lichtenstein-2026-foucaul-marx-hist-though`: lichtenstein-2026-foucaul-marx-hist-though.pdf
+- `marx.bib` `lecercle-2016-philos-lookin-glass`: lecercle-2016-philos-lookin-glass.pdf
+- `marx.bib` `born-2005-music-media-onto-techno`: born-2005-music-media-onto-techno
+- `marx.bib` `jameson-2017-hegel-variations`: jameson-2017-hegel-variations.pdf
+- `marx.bib` `woodward-2011-object-rela-consumer`: woodward-2011-object-rela-consumer.pdf
+- `marx.bib` `mawatari-1985-uno-school`: mawatari-1985-uno-school.pdf
+- `marx.bib` `herscovici-2023-value-histor-econ-epistem`: herscovici-2023-value-histor.pdf
+- `master.bib` `osullivan-2001-aest-affect`: osullivan-2001-aest-affect.pdf
+- `master.bib` `knuuttilahintikka-1986-logic-being`: knuuttilahintikka-1986-logic-being.pdf
+- `master.bib` `hermans-2017-love-time-scarc`: hermans-2017-love-time-scarc.pdf
+- `modernitate.bib` `descartes-1984-pasiun-sufle`: descartes-1984-pasiun-sufle.pdf
+- `modernitate.bib` `hatfield-2003-handb-descar-meditatio`: hatfield-2003-handb-descar-meditatio.pdf
+- `modernitate.bib` `gilby-2019-descar-fiction`: gilby-2019-descar-fiction.pdf
+- `modernitate.bib` `hellercampbell-1977-interpret-music-acoustic`: hellercampbell-1977-interpret-music-acoustic.pdf
+- `modernitate.bib` `elnaschie-2019-spinoz-god`: elnaschie-2019-spinoz-god.pdf
+- `modernitate.bib` `bird-2006-kant-revolut`: bird-2006-kant-revolut.pdf
+- `modernitate.bib` `chepurin-2019-indif-world`: chepurin-2019-indif-world.pdf
+- `modernitate.bib` `steinkamp-1991-differ-indif`: steinkamp-1991-differ-indif
+- `modernitate.bib` `dreyfus-2017-backg-pract`: dreyfus-2017-backg-pract.pdf
+- `modernitate.bib` `dolar-2019-endgam-aesth`: dolar-2019-endgam-aesth.pdf
+- `modernitate.bib` `come-1988-kierk-method`: come-1988-kierk-method.title
+- `modernitate.bib` `kellner-1989-languag-histor-represent`: kellner-1989-languag-histor-represent.pdf
+- `modernitate.bib` `abrams-1971-romantic-theory-critic`: abrams-1971-romantic-theory-critic.pdf
+- `modernitate.bib` `korsyn-2003-decenter-music-research`: korsyn-2003-decenter-music-research.pdf
+- `modernitate.bib` `mooney-2014-selves-discor-resol`: mooney-2014-selves-discor-resol.pdf
+- `music.bib` `pitts-2001-whose-aesth`: pitts-2001-whose-aesth.pdf
+- `music.bib` `tahiro-2020-digit-music`: tahıro-2020-digit-music.pdf
+- `oge.bib` `heidegger-2007-basic-concep`: heidegger-2007-basic-concep
+- `oge.bib` `vernant-2001-univer-gods-mortal`: vernant-2001-univer-gods-mortal.pdf
+- `oge.bib` `loht-2012-heideg-phenom`: lohtuniversity-2012-heideg-phenom.pdf
+- `oge.bib` `burkert-1985-greek-rel`: burkert-1985-greek-rel.pdf
+- `oge.bib` `casenave-1982-heideg`: casenave-1982-heideg.pdf
+- `oge.bib` `gardnergrist-2015-trans-turn`: gardnergrist-2015-trans-turn.pdf
+- `phenomenology.bib` `faulconerwrathall-2000-approp-heideg`: faulconerwrathall-2000-approp-heideg.pdf
+- `phenomenology.bib` `heidegger-2009-logic`: heidegger-2009-logic.pdf
+- `phenomenology.bib` `heidegger-2012-contr-philos-event`: heidegger-2012-contr-philos-event.pdf
+- `phenomenology.bib` `heidegger-2008-ontol-hermene-factici`: heidegger-2008-ontol-hermene-factici.pdf
+- `phenomenology.bib` `barton-1973-introd-what-thing`: barton-1973-i-introd.pdf
+- `thesis.bib` `lotz-2013-reific-throug`: lotz-2013-reific-throug.pdf
+- `thesis.bib` `dolphijn-2022-deleuz-guatt-fascis`: dolphijn-2022-deleuz-guatt-fascis.pdf
+- `thesis.bib` `piovarkoey-2012-music-experien-onto`: piovarkoey-2012-music-experien-onto.pdf
+- `thesis.bib` `wolin-1982-benjam-materi-experience`: wolin-1982-benjam-materi-experience.pdf
+
+## Existing paths found elsewhere in the library (moved to top level) (5)
+
+- `a3s1-estetica-oana.bib` `berlin-1999-roots-roman`: berlin1999the-roots-0.pdf
+- `a3s1-ifr.bib` `2009-analel-univer-craiov`: 2009-analel-univer-craiov.pdf
+- `a3s1-sea.bib` `norton2010time`: norton2010time.pdf
+- `marx.bib` `tiqqun-2012-prelim-young`: tiqqun-2012-prelim-young.pdf
+- `phenomenology.bib` `adkins-1962-heideg-languag`: adkins-1962-heideg-languag.pdf
+
+## Move collisions (0)
+
+
+## Resolved via citekey fallback (13)
+
+- `a3s1-paradigme-culturale.bib` `valsiner2020sensuality` -> ['valsiner2020sensuality0.pdf']
+- `marx.bib` `gorzolazar-2022-jude-montage` -> ['gorzolazar-2022-jude-montage.pdf']
+- `marx.bib` `stefanov2013zenos-para` -> ['stefanov2013zenos-para.pdf']
+- `marx.bib` `spice-1995-hubbub` -> ['spice-1995-hubbub.pdf']
+- `marx.bib` `hoeffdingroald-2019-passiv-aesth-exper` -> ['hoeffdingroald-2019-passiv-aesth-exper.pdf']
+- `marx.bib` `kjellstroem-2025-black-open-acces` -> ['kjellstroem-2025-black-open-acces.pdf']
+- `marx.bib` `deangelis-2017-omnia-sunt-commun` -> ['deangelis-2017-omnia-sunt-commun.pdf']
+- `marx.bib` `gillespie-2014-media-techn` -> ['gillespie-2014-media-techn.pdf']
+- `marx.bib` `daughertywilson-2018-human-machin` -> ['daughertywilson-2018-human-machin.pdf']
+- `marx.bib` `brunet-2024-precar-sound` -> ['brunet-2024-precar-sound.pdf']
+- `marx.bib` `bell-2024-alien-littl` -> ['bell-2024-alien-littl.pdf']
+- `modernitate.bib` `harper-2020-gilles-deleuz` -> ['harper-2020-gilles-deleuz.pdf']
+- `modernitate.bib` `webelhuth-1986-cartes-philos-langu` -> ['webelhuth-1986-cartes-philos-langu.pdf']
+
+## Several files (5)
+
+- `marx.bib` `capino2011beyond-por`: ['capino2011beyond-por1.pdf', 'capino2011beyond-por0.pdf']
+- `marx.bib` `zizek-2014-event-journey`: ['zizek2014event-a-p0.pdf', 'zizek2014event0.pdf']
+- `mind.bib` `markman2000extending-`: ['markman2000extending-1.pdf', 'markman2000extending-0.pdf']
+- `modernitate.bib` `rose1981hegel-cont`: ['rose1981hegel-cont0.pdf', 'juhe2019the-thing-0.pdf']
+- `modernitate.bib` `wilson-1976-descar-epistemo-mind-body`: ['wilson1976descartes0.pdf', 'wilson1976descartes1.pdf']
+
+## File name differs from citekey (114)
+
+- `a1s2-epistemologie-ignoranta.bib` `Dodd_2015` -> Hope Knowledge Blindspots.pdf
+- `f-sides.bib` `juhasz1999sexuality-` -> juhaszsexuality-0.pdf
+- `formal-sciences.bib` `marcus2011ks3` -> marcus2011ks30.pdf
+- `formal-sciences.bib` `1` -> 10.pdf
+- `formal-sciences.bib` `leona-critique` -> leona-critique-of-s.pdf
+- `formal-sciences.bib` `leva-note-on-` -> leva-note-on-the-p.pdf
+- `formal-sciences.bib` `jeshion2001freges-not` -> jeshion2001freges-notions-.pdf
+- `formal-sciences.bib` `peano-axio` -> peano-axioms-ch.pdf
+- `formal-sciences.bib` `picollo2018reference-` -> picollo2018reference-in-ar.pdf
+- `formal-sciences.bib` `heck2006self-refer` -> heck2006self-reference-.pdf
+- `formal-sciences.bib` `halbach2014self-refer` -> halbach2014self-reference-.pdf
+- `formal-sciences.bib` `grabmayr2021self-refer` -> grabmayr2021self-reference-.pdf
+- `formal-semantics.bib` `1` -> 1.pdf
+- `formal-semantics.bib` `6` -> 6.pdf
+- `hci.bib` `suchman-2017-recon-tech-soc-prac` -> suchman2017reconstruc0.pdf
+- `hci.bib` `kay-1990-user-personal` -> kay1990user-inter0.pdf
+- `hci.bib` `litt-2025-malleab` -> geoffrey-litt2025malleable-0.pdf
+- `lang.bib` `stevenson1937the-emotiv` -> stevenson1937iithe-emot0.pdf
+- `lang.bib` `perry1988cognitive-` -> perry1988symposium-0.pdf
+- `lang.bib` `georgalis-2022-freges-hierarch-sense` -> georgalis2022on-freges-0.pdf
+- `lang.bib` `green1999beaney:-fr` -> 3758a834-6848-3aa0-a425-6b64e9972a550.pdf
+- `lang.bib` `marcus1947the-identi` -> barcan1947the-identi0.pdf
+- `lang.bib` `carter1994on-passage` -> carter199418-on-pass0.pdf
+- `lang.bib` `wasserman018paradoxes-` -> wasserman2018paradoxes-0.pdf
+- `lang.bib` `whiteman2013philosophy` -> Philosophy of Space and Time.pdf
+- `lang.bib` `jobczyk2022putnams-mo` -> jobczyk2022putnamas-m0.pdf
+- `lang.bib` `jaszczolt2009representi` -> Representing Time Essay on Temporality.pdf
+- `lang.bib` `hacking1990the-taming` -> The Taming of Chance by Ian Hacking 1990.pdf
+- `lang.bib` `wittgenstein2016tractatus-` -> wittgensteintractatus-0.pdf
+- `lang.bib` `desogus2012` -> desogus20120.pdf
+- `lang.bib` `sdkjfs` -> strawson1964identifyin0.pdf
+- `lang.bib` `lewis-1968-counterpart-theo-quanti-modal-logic` -> lewis1968counterpar0.pdf
+- `lang.bib` `dieter-zeh2007the-physic` -> dieter-zehthe-physic0.pdf
+- `marx.bib` `riley-2005-imper-passion-language` -> riley2005impersonal0.pdf
+- `marx.bib` `marx1981capital-3` -> marx1981capital-30.pdf
+- `marx.bib` `taylor-2013-strav-other` -> taylor2013stravinsky0.pdf
+- `marx.bib` `marx1969opere-30` -> marx1969opere-300.pdf
+- `marx.bib` `czakon-2016-is-hermen` -> czakon2016is-the-her0.pdf
+- `marx.bib` `ferencz-flatza-phenomen` -> ferencz-flatza-phenomenology1.pdf
+- `marx.bib` `filieri2020gerad-gent` -> filieri151.pdf
+- `marx.bib` `goodman1961censor` -> goodman1961censorship0.pdf
+- `marx.bib` `jeongandrew-2008-grizz` -> jeong2008grizzly-gh0.pdf
+- `marx.bib` `julius2009transgresi` -> julius2009transgresiuni-1.pdf
+- `marx.bib` `kennealy-1958-imitat-platos` -> kennealy1958imitation-1.pdf
+- `marx.bib` `krauss-1979-sculp` -> krauss1979sculpture-0.pdf
+- `marx.bib` `marino-2021-adorn-dialec` -> marino2021adorno-on-0.pdf
+- `marx.bib` `mcmurdo-2023-blood-lens` -> mcmurdo2023blood-on-t1.pdf
+- `marx.bib` `mcnamarasheldon-2017-amateur-movie-makin` -> mcnamara2017amateur-mo0.pdf
+- `marx.bib` `meier-2015-decon-abyss-futur` -> meier2015deconstruc0.pdf
+- `marx.bib` `meyer-2019-digit-indus` -> meyer2019digitaliza0.pdf
+- `marx.bib` `morris-1937-beaut-natur` -> morris1937beauty-and0.pdf
+- `marx.bib` `newall-2011-what-pictur` -> newall2011what-is-a-0.pdf
+- `marx.bib` `robertsintangibil` -> robertsintangibilities1.pdf
+- `marx.bib` `santana-molina2020the-index-` -> molina2020the-index-0.pdf
+- `marx.bib` `schmid2018schellings` -> schmid2018schellingas-met1.pdf
+- `marx.bib` `shariatinia-2016-heideg-death` -> shariatinia2016heideggers0.pdf
+- `marx.bib` `victor-2008-abjec` -> victor2008abjection0.pdf
+- `marx.bib` `walshfrom-natio` -> walshfrom-nations-to1.pdf
+- `marx.bib` `weiner-2018-photog-mourn` -> weiner2018photograph0.pdf
+- `marx.bib` `bear-2015-femin-manifes-capital` -> bear2015gens-a-fe0.pdf
+- `marx.bib` `lemley2014ip-in-a-wo` -> lemley2019ip-in-a-wo0.pdf
+- `marx.bib` `gabert-doyon-2021-inter` -> gabert-doyoninterview0.pdf
+- `marx.bib` `schrift-2014-logic-gift` -> schrift2014the-logic-0.pdf
+- `marx.bib` `smythe-1981-depen-road` -> smythe1981dependency0.pdf
+- `marx.bib` `brown-2000-phonog-ontolo-record` -> brown2000phonograph0.pdf
+- `marx.bib` `hayton-2021-skipp-too-fast` -> hayton2021skipping-t0.pdf
+- `marx.bib` `arditi-2021-stream-cultur` -> arditi2021streaming-0.pdf
+- `marx.bib` `bbc-2017-great-song` -> bbc2017the-dying-0.pdf
+- `marx.bib` `gabel-1975-false-consc` -> gabel1975false-cons0.pdf
+- `marx.bib` `lobato-2009-subcinema-informal` -> lobato2009subcinema0.pdf
+- `marx.bib` `dean-2020-commun-neo-feudal` -> dean2020communism-0.pdf
+- `marx.bib` `lysloffgay-2003-music-technoculture` -> sdfdsf0.pdf
+- `marx.bib` `2007digital-mu` -> ifpi20070.pdf
+- `marx.bib` `dimcclennen-2024-left-theor` -> di-leo2024left-theor0.epub
+- `marx.bib` `tamas-2011-marx-1989` -> tamas2011marx-on-190.pdf
+- `marx.bib` `moir-2020-bloch-specu-materi` -> moir2020ernst-bloc0.pdf
+- `marx.bib` `poenaru-2017-locur-comune` -> poenaru2017locuri-com0.pdf
+- `marx.bib` `zizek-2014-event-journey` -> zizek2014event-a-p0.pdf
+- `marx.bib` `maatta2022mapping-id` -> wiles1953scarcity-m0.pdf
+- `marx.bib` `bookchin-1965-towar-liber-techn` -> bookchin1965towards-a-0.pdf
+- `marx.bib` `marx1957opere-1` -> marx1957opere-10.pdf
+- `marx.bib` `maes2012art--porno` -> maesart--porno0.pdf
+- `marx.bib` `sheehan-2013-moder-aesth-violen` -> sheehan2013modernism-0.pdf
+- `mind.bib` `chang2002alonzo-chu` -> chang2002alambdaonz0.pdf
+- `mind.bib` `cite-key` -> 1. David J. Chalmers - Philosophy of Mind_ Classical and Contemporary Readings-Oxford University Press, USA (2002).pdf
+- `mind.bib` `sprevakphil10134` -> sprevakphil101340.pdf
+- `mind.bib` `pinar-saygin2000turing-tes` -> pinar_saygin_20000.pdf
+- `mind.bib` `piccinini2008computatio` -> piccininicomputation0.pdf
+- `mind.bib` `garson2010connection` -> garsonconnection0.pdf
+- `modernitate.bib` `martin-1961-kants-metap-science` -> martin1961kants-meta0.pdf
+- `modernitate.bib` `garber-2009-leibn` -> garber2009leibniz-b0.pdf
+- `modernitate.bib` `wilson-1976-descar-epistemo-mind-body` -> wilson1976descartes0.pdf
+- `modernitate.bib` `lopez-2008-creat-world` -> lopez2008the-creati0.pdf
+- `modernitate.bib` `apostolova-2010-sensat-memor` -> apostolova2010sensation-0.pdf
+- `modernitate.bib` `kristeller1990renaissanc` -> Renaissance Thought and the Arts Essays 2020.pdf
+- `modernitate.bib` `cashner-2024-athan-kirch` -> cashner2024athanasius0.pdf
+- `modernitate.bib` `hampshire-2005-spinoz-spinozism` -> hampshire2005spinoza-an0.pdf
+- `modernitate.bib` `hume-1987-cercet-intelec-omene` -> hume1987cercetare-0.pdf
+- `modernitate.bib` `locke1961eseu-asupr-3` -> locke1961eseu-asupr-30.pdf
+- `modernitate.bib` `locke1961eseu-asupr-2` -> locke1961eseu-asupr-20.pdf
+- `modernitate.bib` `locke1961eseu-asupr-1` -> locke1961eseu-asupr-10.pdf
+- `modernitate.bib` `warnock-1976-imagin` -> warnock1976imaginatio0.pdf
+- `modernitate.bib` `casey1976imagining:` -> casey1979imagining0.pdf
+- `modernitate.bib` `bird-2006-kant-revolut` -> bird2013the-revolu0.pdf
+- `music.bib` `melbourne-school-of-designvoices-of-` -> toole2008sound-repr0.pdf
+- `music.bib` `wooller2005a-framewor` -> wooller20050.pdf
+- `music.bib` `wilmering2020a-history-` -> wilmering_2020.pdf
+- `music.bib` `biswas2023advances-i` -> 2023advances-in-spe.pdf
+- `music.bib` `repenning2020computatio` -> repenningcomputationalmusicthinking20200.pdf
+- `music.bib` `rocchesso2003introducti` -> rocchesso2003introduction-to.pdf
+- `music.bib` `alencar2019music-scie` -> alencar2019music-science.pdf
+- `music.bib` `lippe1998real-time-` -> lippe1998real-time-inter.pdf
+- `music.bib` `signal-pro` -> signal-processi.pdf
+- `typst.bib` `schuster2024link-style` -> schusterlink-style0.pdf
+
